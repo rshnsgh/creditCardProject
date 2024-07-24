@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-section">
+      <div class="front-card">
+        <img src="images/card-logo.svg" alt="" srcset="" class="logo">
+        <span class="cred-no js-cred-no">0000 0000 0000 0000</span> 
+        <p class="cred-name js-cred-name" id="js-cred-name">Jane Appleseed</p> 
+        <p class="cred-exp js-cred-exp">00/00</p> 
+      </div>
+      <div class="back-card">
+        <p class="cvc">000</p>
+      </div>
+    </div>
+    <form class="right-section">
+      <div class="right-inputs">
+        <label for="creditCard" class="cardholder">CARDHOLDER NAME</label> 
+        <input type="text" placeholder="e.g. Jane Appleseed" id="js-cred-name-input" class="name-css"> <br> <br>
+      
+        <label class="cardno">CARD NUMBER</label> <br>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" class="cred-num" id="credNumber">  <br> <br><br>
+        
+        
+        <span class="exp">EXP. DATE (MM/YY)</span> 
+        <div class="section">
+        <div class="expiry-div">
+          <div class="exp-text">
+          </div>
+          
+          <div class="month">
+            <input type="text" placeholder="MM" min="1" max="12" maxlength="2" id="expMonth" class="month"> 
+          </div>
+          <div class="years">
+            <input type="text" placeholder="YY" min="24" max="99" maxlength="2" id="expYear" class="year">
+          </div>
+        </div>
+        <div class="cvc-div">
+          <label for="cvcNo" class="cvc-input">CVC</label> 
+          <input type="text" placeholder="e.g. 123" min="100" max="999" maxlength="4" id="cvcNo" class="cvc-no"> 
+        </div>
+        </div>
+        <button type="button" onclick="submitForm()" class="confirm">Confirm</button> 
+      </div>
+      
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

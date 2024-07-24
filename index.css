@@ -1,0 +1,227 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  margin-top: 105px;
+}
+
+.left-section {
+  width: 60%;
+}
+
+.front-card {
+  position: relative;
+  height: 245px;
+  width: 447px;
+  background-image: url(images/bg-card-front.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+}
+
+.cred-no {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  padding-left: 175px;
+  letter-spacing: 2px;
+}
+
+.cred-name {
+  position: absolute;
+  bottom: 8px;
+  left: 25px;
+}
+
+.cred-exp {
+  position: absolute;
+  bottom: 8px;
+  right: 25px;
+}
+
+.back-card {
+  position: relative;
+  height: 245px;
+  width: 447px;
+  background-image: url(images/bg-card-back.png);
+  margin-left: 90px;
+  margin-top: 40px;
+}
+
+.cvc {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  color: white;
+}
+
+.right-section {
+  padding: 50px;
+}
+
+.right-inputs {
+  color: hsl(278, 68%, 11%);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px;
+  padding-top: 80px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.name-css, .cred-num {
+  width: 98%;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 5px;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 5px;
+}
+
+.expiry-div {
+  margin-left: 0px;
+  display: flex;
+  width: 45%;
+}
+
+.month {
+  width: 3.5rem;
+  margin-right: 20px;
+}
+
+.year {
+  width: 3.5rem;
+}
+
+.section {
+  display: flex;
+}
+
+.cvc-div {
+  margin-left: 30px;
+  margin-top: -19px;
+}
+
+#cvcNo {
+  width: 98%;
+}
+
+.confirm {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  width: 101%;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.month, .year,.cvc-no {
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 5px;
+  height: 30px;
+}
+
+.ccontainer {
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-left: 50px;
+}
+
+.continue {
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  width: 101%;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  body {
+    background-image: url(images/bg-main-mobile.png);
+    background-size: 500px;
+    
+  }
+  .main-container {
+    display: block;
+  }
+  .right-section {
+    padding: 0px;
+  }
+  .back-card {
+    position: relative;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-image: url(images/bg-card-back.png);
+    width: 250px;
+    margin-left: 40px;
+    margin-top: -300px;
+  }
+  .front-card {
+    position: relative;
+    background-image: url(images/bg-card-front.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    color: white;
+    width: 250px;
+    margin-top: 200px;
+  }
+  .logo {
+    position: absolute;
+    width: 55px;
+    top: 75px;
+    left: 8px;
+  }
+  
+  .cred-no {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    padding-left: 90px;
+    letter-spacing: 2px;
+  }
+  
+  .cred-name {
+    font-size: 12px;
+    position: absolute;
+    bottom: 58px;
+    left: 15px;
+  }
+  
+  .cred-exp {
+    font-size: 12px;
+    position: absolute;
+    bottom: 58px;
+    right: 15px;
+  }
+  .cvc {
+    position: absolute;
+    font-size: 12px;
+    bottom: 160px;
+    right: 30px;
+    color: white;
+  }
+}
